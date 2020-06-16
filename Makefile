@@ -36,7 +36,7 @@ all: preflight
 	$(MAKE) $(PROGRAM)
 
 preflight:
-	@if [ ! -f openvpn-plugin.h ]; then \
+	@if [ ! -f /usr/include/openvpn-plugin.h ]; then \
 		echo "The openvpn-plugin.h file is missing.  Fetch a copy from the openvpn tarball."; \
 		echo "  https://openvpn.net/index.php/open-source/downloads.html"; \
 		false; \
